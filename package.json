@@ -1,0 +1,19 @@
+{
+	"name": "coding_challenge",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"cypress:open:desktop": "cypress open -b chrome --config-file cypress.config.js",
+		"cypress:open:iphonese": "MOBILE=true DEVICE=iphone-se2 cypress open -b chrome --config-file cypress.config.js",
+		"cypress:open:surface": "SURFACE=true cypress open -b chrome --config-file cypress.config.js",
+		"cypress:run:desktop": "cypress run --config-file cypress.config.js",
+		"cypress:run:iphonese": "MOBILE=true DEVICE=iphone-se2  cypress run --config-file cypress.config.js",
+		"cypress:run:surface": "SURFACE=true cypress run --config-file cypress.config.js"
+	},
+	"devDependencies": {
+		"@faker-js/faker": "^8.0.2",
+		"cypress": "13.10.0",
+		"mocha": "^10.2.0",
+		"mocha-allure-reporter": "^1.4.0"
+	}
+}
